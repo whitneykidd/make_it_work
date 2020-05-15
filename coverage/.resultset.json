@@ -448,8 +448,8 @@
       "/Users/whitney/turing/2module/projects/ic/make_it_work/app/controllers/projects_controller.rb": {
         "lines": [
           1,
-          1,
-          0,
+          null,
+          null,
           null,
           null,
           1,
@@ -459,6 +459,6 @@
         ]
       }
     },
-    "timestamp": 1589560656
+    "timestamp": 1589561184
   }
 }
