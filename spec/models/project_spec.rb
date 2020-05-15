@@ -26,7 +26,6 @@ RSpec.describe Project, type: :model do
 
   describe "methods" do
     it ".contestant_count" do
-    
       expect(@news_chic.contestant_count).to eq(2)
     end
 
