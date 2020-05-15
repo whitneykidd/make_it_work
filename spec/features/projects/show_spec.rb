@@ -19,17 +19,14 @@ RSpec.describe "on a project's show page" do
       expect(page).to have_content("#{@news_chic.material}")
       expect(page).to have_content("#{@recycled_material_challenge.theme}")
     end
+
     it "can see the number of contestants on this project" do 
       visit "/projects/#{@news_chic.id}"
       expect(page).to have_content("Number of Contestants: 2")
     end
-end
 
-# User Story 3 of 3
-# As a visitor,
-# When I visit a project's show page
-# I see a count of the number of contestants on this project
-# (e.g.    Litfit
-#     Material: Lamp Shade
-#   Challenge Theme: Apartment Furnishings
-#   Number of Contestants: 3 )
+    it "can see the average years of experience for contestants by project" do 
+      visit "/projects/#{@news_chic.id}"
+      expect(page).to have_content("Average Contestant Experience: 12.50")
+    end
+end
